@@ -16,22 +16,29 @@ public class EventTest {
   }
 
   @Test
-  public void verifyCoupons_noValidCouponCodes_0() {
+  public void verifyCoupon1_NotAValidCoupon_false() {
     Event testEvent = new Event(15, "Steak", "Wine & Beer", "DJ");
-    assertEquals(0, testEvent.verifyCoupons("27GH$X" , "45NH$V"));
+    assertEquals(false, testEvent.verifyCoupon1("453X&T"));
   }
 
   @Test
-  public void verifyCoupons_oneValidCouponCode_1() {
+  public void verifyCoupon1_isAValidCoupon_true() {
     Event testEvent = new Event(15, "Steak", "Wine & Beer", "DJ");
-    assertEquals(1, testEvent.verifyCoupons("27GH$X" , "780K#L"));
+    assertEquals(true, testEvent.verifyCoupon1("216F&B"));
   }
 
   @Test
-  public void verifyCoupons_twoValidCouponCode_2() {
+  public void verifyCoupon2_NotAValidCoupon_false() {
     Event testEvent = new Event(15, "Steak", "Wine & Beer", "DJ");
-    assertEquals(2, testEvent.verifyCoupons("216F&B" , "780K#L"));
+    assertEquals(false, testEvent.verifyCoupon2("453X&T"));
   }
+
+  @Test
+  public void verifyCoupon2_isAValidCoupon_true() {
+    Event testEvent = new Event(15, "Steak", "Wine & Beer", "DJ");
+    assertEquals(true, testEvent.verifyCoupon2("780K#L"));
+  }
+
 
 
 }

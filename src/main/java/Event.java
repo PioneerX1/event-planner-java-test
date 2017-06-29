@@ -17,16 +17,28 @@ public class Event {
     return mCost;
   }
 
-  public int verifyCoupons(String coupon1, String coupon2) {
-    int couponCount = 0;
-    if(coupon1.equals("216F&B") || coupon1.equals("780K#L")) {
-      couponCount++;
-    }
-    if(coupon2.equals("216F&B") || coupon2.equals("780K#L")) {
-      couponCount++;
-    }
-    return couponCount;
+  public boolean verifyCoupon1(String coupon) {
+    if (coupon.equals("216F&B")) {
+      return true;
+    } else { return false; }
   }
+
+  public boolean verifyCoupon2(String coupon) {
+    if (coupon.equals("780K#L")) {
+      return true;
+    } else { return false; }
+  }
+
+  // public int verifyCoupons(String coupon1, String coupon2) {
+  //   int couponCount = 0;
+  //   if(coupon1.equals("216F&B") || coupon1.equals("780K#L")) {
+  //     couponCount++;
+  //   }
+  //   if(coupon2.equals("216F&B") || coupon2.equals("780K#L")) {
+  //     couponCount++;
+  //   }
+  //   return couponCount;
+  // }
 
 
 }
