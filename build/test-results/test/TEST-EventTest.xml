@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EventTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-29T23:02:17" hostname="Micks-MacBook-Pro.local" time="0.002">
+<testsuite name="EventTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-06-29T23:36:38" hostname="Micks-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="newEvent_instantiatesCorrectly" classname="EventTest" time="0.002"/>
+  <testcase name="verifyCoupons_oneValidCouponCode_1" classname="EventTest" time="0.001"/>
+  <testcase name="getCost_returnCost_0" classname="EventTest" time="0.0"/>
+  <testcase name="verifyCoupons_twoValidCouponCode_2" classname="EventTest" time="0.0"/>
+  <testcase name="newEvent_instantiatesCorrectly_true" classname="EventTest" time="0.0"/>
+  <testcase name="verifyCoupons_noValidCouponCodes_0" classname="EventTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
