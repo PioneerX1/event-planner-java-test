@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EventTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2017-06-30T03:43:40" hostname="Micks-MacBook-Pro.local" time="0.007">
+<testsuite name="EventTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2017-06-30T04:30:29" hostname="Micks-MacBook-Pro.local" time="0.008">
   <properties/>
-  <testcase name="calculateEntertainmentCost_forDJ_300" classname="EventTest" time="0.001"/>
+  <testcase name="calculateEntertainmentCost_forDJ_300" classname="EventTest" time="0.002"/>
   <testcase name="calculateBevCost_forFullBar_450" classname="EventTest" time="0.0"/>
   <testcase name="calculateFoodCost_forSteakOption_450" classname="EventTest" time="0.0"/>
-  <testcase name="calculateTotalCost_for15VeggiesFullBarMimeFlashMob_2100" classname="EventTest" time="0.0"/>
+  <testcase name="calculateTotalCost_for15VeggiesFullBarMimeFlashMob_2100" classname="EventTest" time="0.001"/>
   <testcase name="getCost_returnCost_0" classname="EventTest" time="0.0"/>
   <testcase name="calculateEntertainmentCost_forMimeFlashMob_1500" classname="EventTest" time="0.0"/>
   <testcase name="calculateEntertainmentCost_forFireBreathers_300" classname="EventTest" time="0.0"/>
