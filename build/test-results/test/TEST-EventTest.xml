@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EventTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-29T23:46:27" hostname="Micks-MacBook-Pro.local" time="0.004">
+<testsuite name="EventTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2017-06-30T01:13:58" hostname="Micks-MacBook-Pro.local" time="0.008">
   <properties/>
-  <testcase name="getCost_returnCost_0" classname="EventTest" time="0.002"/>
+  <testcase name="calculateEntertainmentCost_forDJ_300" classname="EventTest" time="0.002"/>
+  <testcase name="calculateBevCost_forFullBar_450" classname="EventTest" time="0.0"/>
+  <testcase name="calculateFoodCost_forSteakOption_450" classname="EventTest" time="0.0"/>
+  <testcase name="calculateTotalCost_for15VeggiesFullBarMimeFlashMob_2100" classname="EventTest" time="0.0"/>
+  <testcase name="getCost_returnCost_0" classname="EventTest" time="0.0"/>
+  <testcase name="calculateEntertainmentCost_forMimeFlashMob_1500" classname="EventTest" time="0.0"/>
+  <testcase name="calculateEntertainmentCost_forFireBreathers_300" classname="EventTest" time="0.0"/>
+  <testcase name="calculateBevCost_forWineAndBeer_225" classname="EventTest" time="0.0"/>
+  <testcase name="calculateTotalCost_for100FishWineAndBeerMimeFlashMob_5000" classname="EventTest" time="0.0"/>
+  <testcase name="calculateFoodCost_forFishOption_300" classname="EventTest" time="0.0"/>
   <testcase name="verifyCoupon1_NotAValidCoupon_false" classname="EventTest" time="0.0"/>
   <testcase name="newEvent_instantiatesCorrectly_true" classname="EventTest" time="0.0"/>
+  <testcase name="calculateTotalCost_for150and2ndCouponFreeDJ_9000" classname="EventTest" time="0.0"/>
+  <testcase name="calculateBevCost_forSoftDrinksAndJuice_75" classname="EventTest" time="0.001"/>
   <testcase name="verifyCoupon1_isAValidCoupon_true" classname="EventTest" time="0.0"/>
   <testcase name="verifyCoupon2_isAValidCoupon_true" classname="EventTest" time="0.0"/>
+  <testcase name="calculateFoodCost_forVeggieOption_150" classname="EventTest" time="0.0"/>
   <testcase name="verifyCoupon2_NotAValidCoupon_false" classname="EventTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
