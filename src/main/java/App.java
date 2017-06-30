@@ -3,6 +3,7 @@ import java.io.Console;
 public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
+    
     System.out.println("---------");
     System.out.println("Welcome to Event Planner. This application will walk you through some options and customize an event quote for your needs. First, a few questions...");
     System.out.println("---------");
@@ -40,10 +41,22 @@ public class App {
     //verify coupons
     newEvent.verifyCoupon1(code1);
     newEvent.verifyCoupon2(code2);
-    //calculate total event cost
-    int cost = newEvent.calculateTotalCost();
-    //output cost
-    System.out.println("Your event will cost a total of $" + cost);
+
+    //output summary and cost
+    System.out.println("Your summary and cost is below");
+    System.out.println("----------------");
+    System.out.println("Meal Choice: " + newEvent.getFoodServed());
+    System.out.println("Beverage Choice: " + newEvent.getBevServed());
+    System.out.println("Entertainment Choice: " + newEvent.getEntertainment());
+    if(newEvent.getValidCoupon1() == true) {
+      System.out.println("Coupon Applied: $50 Off");
+    }
+    if(newEvent.getValidCoupon2() == true) {
+      System.out.println("Coupon Applied: Free DJ Service");
+    }
+    newEvent.calculateTotalCost();
+    System.out.println("Total Event Cost: $" + newEvent.getCost());
+    System.out.println("----------------");
 
 
 
