@@ -17,6 +17,34 @@ public class Event {
     mValidCoupon2 = false;
   }
 
+  public boolean getValidCoupon2() {
+    return mValidCoupon2;
+  }
+
+  public boolean getValidCoupon1() {
+    return mValidCoupon1;
+  }
+
+  public String getEntertainment() {
+    return mEntertainment;
+  }
+
+  public String getBevServed() {
+    return mBevServed;
+  }
+
+  public String getFoodServed() {
+    return mFoodServed;
+  }
+
+  public int getGuestCount() {
+    return mGuestCount;
+  }
+
+  public int getCost() {
+    return mCost;
+  }
+
   public int calculateTotalCost() {
     mCost = this.calculateFoodCost() + this.calculateBevCost() + this.calculateEntertainmentCost();
     //return mCost;
@@ -60,10 +88,6 @@ public class Event {
     } else {
       return 0;
     }
-  }
-
-  public int getCost() {
-    return mCost;
   }
 
   public boolean verifyCoupon1(String coupon) {
