@@ -112,6 +112,19 @@ public class EventTest {
     assertEquals(9000, testEvent.calculateTotalCost());
   }
 
+  @Test
+  public void calculateTotalCost_forCoupon50off_1450() {
+    Event testEvent = new Event(20, "Steak", "Full Bar", "DJ");
+    boolean coupon1Legit = testEvent.verifyCoupon1("216F&B");
+    assertEquals(1450, testEvent.calculateTotalCost());
+  }
 
+  @Test
+  public void calculateTotalCost_WithBothCoupons_() {
+    Event testEvent = new Event(200, "Steak", "Full Bar", "DJ");
+    boolean coupon1Legit = testEvent.verifyCoupon1("216F&B");
+    boolean coupon2Legit = testEvent.verifyCoupon2("780K#L");
+    assertEquals(11950, testEvent.calculateTotalCost());
+  }
 
 }
